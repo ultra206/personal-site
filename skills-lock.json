@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "skills": {
+    "vue-ai-apps": {
+      "source": "PyModel/vue3-best-practices",
+      "sourceType": "github",
+      "skillPath": "skills/vue-ai-apps/SKILL.md",
+      "computedHash": "c534f90f866ea91f6ae56fee30befa2f136f79aeb489ff3d9955f128789fe036"
+    },
+    "vue-best-practices": {
+      "source": "PyModel/vue3-best-practices",
+      "sourceType": "github",
+      "skillPath": "skills/vue-best-practices/SKILL.md",
+      "computedHash": "e149a5495e2c363965618b2250b21843d21bd983c72b3054e5ba175bd735a059"
+    },
+    "vue-debug-guides": {
+      "source": "PyModel/vue3-best-practices",
+      "sourceType": "github",
+      "skillPath": "skills/vue-debug-guides/SKILL.md",
+      "computedHash": "43ce79db165da0c893f09aa6e51b1a543ff3a7146a5657f36eeeb746bf3029ed"
+    },
+    "vue-jsx-best-practices": {
+      "source": "PyModel/vue3-best-practices",
+      "sourceType": "github",
+      "skillPath": "skills/vue-jsx-best-practices/SKILL.md",
+      "computedHash": "4b442fbe9fe43102b32e5c0fa2923f8b4117b4a5f5f5498538ddb46cd658b2b0"
+    },
+    "vue-options-api-best-practices": {
+      "source": "PyModel/vue3-best-practices",
+      "sourceType": "github",
+      "skillPath": "skills/vue-options-api-best-practices/SKILL.md",
+      "computedHash": "a63f9d4f4e3c3ecd4f9f6e049ed5d1ef2b6a6cbceb6d34b911dc0bb7c00e0ad4"
+    },
+    "vue-pinia-best-practices": {
+      "source": "PyModel/vue3-best-practices",
+      "sourceType": "github",
+      "skillPath": "skills/vue-pinia-best-practices/SKILL.md",
+      "computedHash": "721041ca87160998d0f1dd485f1da00e3444e9989ca946262231fceb94319d03"
+    },
+    "vue-router-best-practices": {
+      "source": "PyModel/vue3-best-practices",
+      "sourceType": "github",
+      "skillPath": "skills/vue-router-best-practices/SKILL.md",
+      "computedHash": "d12c6982edf509e14eeb781800b2023a06152cd02963a9893a4b68bf3d2803bb"
+    },
+    "vue-testing-best-practices": {
+      "source": "PyModel/vue3-best-practices",
+      "sourceType": "github",
+      "skillPath": "skills/vue-testing-best-practices/SKILL.md",
+      "computedHash": "a9fa40df7f2d3cffce8b38e98f31a33067559c7e4517e9707f39827c66296455"
+    }
+  }
+}
