@@ -20,7 +20,8 @@ const handleSelectCategory = (category: string) => {
 <template>
     <div class="w-full max-w-7xl flex flex-col gap-12 py-8 px-4 sm:px-6 lg:px-8 text-txt mx-auto relative">
 
-        <PageSidebar />
+        <!-- Desactivado temporalmente -->
+        <!--<PageSidebar />-->
 
         <PersonalHeader />
 
