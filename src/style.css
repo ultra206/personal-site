@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "primeicons/primeicons.css";
+
+:root {
+  /* Fondos: Negro grisáceo más profundo */
+  --raw-dark: #0e0f11;
+  --raw-surface: #16181d;
+
+  /* Secundario: Verde vibrante (#11bd4a) */
+  --raw-primary: #11bd4a;
+  --raw-primary-hover: #0d963a;
+
+  /* Acentuación: Azul cian eléctrico para máximo contraste con #11bd4a */
+  --raw-accent: #22d3ee;
+  --raw-accent-hover: #06b6d4;
+
+  /* Textos */
+  --raw-txt: #f3f4f6;
+  --raw-txt-muted: #9ca3af;
+
+  /* Animaciones */
+  --anim-duration: 0.3s;
+  --anim-bezier: cubic-bezier(0.21, 0.84, 0.68, 1);
+}
+
+@theme {
+  --color-dark: var(--raw-dark);
+  --color-surface: var(--raw-surface);
+  --color-primary: var(--raw-primary);
+  --color-primary-hover: var(--raw-primary-hover);
+  --color-accent: var(--raw-accent);
+  --color-accent-hover: var(--raw-accent-hover);
+  --color-txt: var(--raw-txt);
+  --color-txt-muted: var(--raw-txt-muted);
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-stagger-item {
+  opacity: 0;
+  animation: fadeSlideUp var(--anim-duration) var(--anim-bezier) forwards;
+  animation-delay: var(--stagger-delay, 0s);
+}

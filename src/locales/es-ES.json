@@ -1,0 +1,257 @@
+{
+    "header": {
+        "location": "Barcelona, España",
+        "nav": {
+            "home": "Inicio"
+        }
+    },
+    "profile": {
+        "name": "David Elias Carrasco",
+        "role": "Software Engineer",
+        "specialized": "Especializado en .NET, Vue 3, Cloud y Arquitectura de Software",
+        "aboutMe": "Sobre mí",
+        "summary1": "Software Engineer especializado en el diseño, desarrollo, evolución y modernización integral de aplicaciones empresariales de misión crítica, con sólida experiencia en arquitecturas cloud escalables, Inteligencia Artificial aplicada y desarrollo full-stack de alto rendimiento.",
+        "summary2": "Actualmente formo parte de NTT DATA prestando servicios para Ecoembes, donde participo activamente en el ciclo de vida del software mediante el desarrollo de nuevas características y el mantenimiento evolutivo y correctivo de sistemas existentes. La plataforma tecnológica descansa sobre un robusto ecosistema basado en .NET para el backend, bases de datos relacionales Oracle para la persistencia y gestión de datos complejos, y Vue 3 para una experiencia de usuario frontend moderna y fluida. Asimismo, lidero la exploración e implementación práctica de nuevas tecnologías con Inteligencia Artificial y Agentic AI, optimizando flujos de trabajo internos e impulsando la innovación tecnológica del negocio."
+    },
+    "experience": {
+        "title": "Trayectoria Profesional",
+        "expand": "Ampliar",
+        "collapse": "Contraer",
+        "roles": {
+            "current": "Software Engineer",
+            "junior": "Junior Software Engineer",
+            "intern": "Becario"
+        }
+    },
+    "skills": {
+        "title": "Especialidades & Skills",
+        "categories": {
+            "ai": "Inteligencia Artificial",
+            "backend": "Backend & Arquitectura",
+            "frontend": "Frontend",
+            "databases": "Bases de Datos",
+            "devops": "Cloud & DevOps",
+            "languages": "Idiomas"
+        },
+        "languagesList": {
+            "spanish": "Español (Nativo)",
+            "catalan": "Catalán (Nativo)",
+            "english": "Inglés (Profesional)"
+        },
+        "details": {
+            "ai": {
+                "title": "Inteligencia Artificial",
+                "technologies": {
+                    "AgenticAI": {
+                        "name": "Agentic AI",
+                        "description": "Diseño y pruebas de flujos autónomos y agentes inteligentes para optimizar procesos de desarrollo."
+                    },
+                    "GitHubCopilot": {
+                        "name": "GitHub Copilot",
+                        "description": "Uso diario como asistente de pares para acelerar la escritura de código repetitivo y resolución de bugs."
+                    },
+                    "SpecDrivenDev": {
+                        "name": "Spec-Driven Dev",
+                        "description": "Enfoque guiado por especificaciones y contratos claros asistidos por IA para arquitecturas limpias."
+                    },
+                    "DocumentIntelligence": {
+                        "name": "Document Intelligence",
+                        "description": "Extracción automatizada y análisis de datos no estructurados en documentos técnicos."
+                    },
+                    "LLMs": {
+                        "name": "LLMs",
+                        "description": "Integración y consumo de modelos de lenguaje grande para consultas contextuales y automatización."
+                    }
+                }
+            },
+            "backend": {
+                "title": "Backend & Arquitectura",
+                "technologies": {
+                    "DotNet": {
+                        "name": ".NET",
+                        "description": "Desarrollo robusto en C#, ASP.NET Core y Entity Framework Core para servicios empresariales de alto rendimiento."
+                    },
+                    "NodeJs": {
+                        "name": "Node.js",
+                        "description": "Construcción de servicios backend ligeros y microservicios orientados a eventos."
+                    },
+                    "Python": {
+                        "name": "Python",
+                        "description": "Automatización de scripts, procesamiento de datos y pequeñas herramientas de soporte."
+                    },
+                    "JavaScript": {
+                        "name": "JavaScript",
+                        "description": "Dominio de ESNext, asincronía y patrones modernos tanto en backend como frontend."
+                    },
+                    "TypeScript": {
+                        "name": "TypeScript",
+                        "description": "Tipado estricto aplicado en todo el ecosistema full-stack para asegurar mantenibilidad."
+                    },
+                    "RestApi": {
+                        "name": "REST APIs",
+                        "description": "Diseño, versionado y documentación de APIs RESTful seguras y escalables."
+                    },
+                    "Microservices": {
+                        "name": "Microservices",
+                        "description": "Arquitecturas desacopladas orientadas a servicios con comunicación eficiente."
+                    }
+                }
+            },
+            "frontend": {
+                "title": "Frontend",
+                "technologies": {
+                    "Vue": {
+                        "name": "Vue 3",
+                        "description": "Creación de interfaces reactivas y modulares utilizando Composition API y Pinia."
+                    },
+                    "Angular": {
+                        "name": "Angular",
+                        "description": "Desarrollo en entornos corporativos utilizando arquitectura basada en componentes y RxJS."
+                    },
+                    "TypeScript": {
+                        "name": "TypeScript",
+                        "description": "Desarrollo tipado en frontend para componentes robustos y reutilizables."
+                    },
+                    "JavaScript": {
+                        "name": "JavaScript",
+                        "description": "Manipulación del DOM y lógica de cliente optimizada."
+                    },
+                    "TailwindCSS": {
+                        "name": "Tailwind CSS",
+                        "description": "Maquetación ágil, moderna y responsive orientada a sistemas de diseño personalizados."
+                    }
+                }
+            },
+            "databases": {
+                "title": "Bases de Datos",
+                "technologies": {
+                    "Oracle": {
+                        "name": "Oracle & PL/SQL",
+                        "description": "Diseño de esquemas relacionales avanzados, optimización de consultas complejas y procedimientos almacenados."
+                    },
+                    "PostgreSQL": {
+                        "name": "PostgreSQL",
+                        "description": "Gestión de bases de datos relacionales modernas, índices y rendimiento."
+                    },
+                    "MongoDB": {
+                        "name": "MongoDB",
+                        "description": "Modelado de datos NoSQL orientado a documentos flexibles y escalables."
+                    },
+                    "MySQL": {
+                        "name": "MySQL",
+                        "description": "Administración y consultas eficientes para aplicaciones web relacionales."
+                    }
+                }
+            },
+            "devops": {
+                "title": "Cloud & DevOps",
+                "technologies": {
+                    "Azure": {
+                        "name": "Microsoft Azure",
+                        "description": "Despliegue y gestión de recursos en la nube utilizando servicios administrados."
+                    },
+                    "AzureDevOps": {
+                        "name": "Azure DevOps",
+                        "description": "Configuración de repositorios, tableros y pipelines de entrega continua."
+                    },
+                    "GitHubActions": {
+                        "name": "GitHub Actions",
+                        "description": "Automatización de flujos CI/CD para testeo y despliegue continuo."
+                    },
+                    "CICD": {
+                        "name": "CI/CD",
+                        "description": "Implementación de pipelines para asegurar calidad y despliegues automatizados sin fricción."
+                    },
+                    "Git": {
+                        "name": "Git",
+                        "description": "Control de versiones avanzado, estrategias de ramas (GitFlow) y resolución de conflictos."
+                    },
+                    "Docker": {
+                        "name": "Docker",
+                        "description": "Contenedorización de entornos de desarrollo y producción para portabilidad total."
+                    },
+                    "Kubernetes": {
+                        "name": "Kubernetes",
+                        "description": "Orquestación de contenedores y despliegues escalables."
+                    },
+                    "Rancher": {
+                        "name": "Rancher",
+                        "description": "Gestión y monitorización de clústeres de contenedores."
+                    }
+                }
+            },
+            "languages": {
+                "title": "Idiomas",
+                "technologies": {
+                    "Spanish": {
+                        "name": "Español",
+                        "description": "Competencia profesional nativa, redacción técnica clara y comunicación fluida."
+                    },
+                    "Catalan": {
+                        "name": "Catalán",
+                        "description": "Competencia profesional nativa, contexto regional y colaboración local."
+                    },
+                    "English": {
+                        "name": "English",
+                        "description": "Competencia profesional para lectura de documentación técnica, colaboración internacional y recursos globales de ingeniería."
+                    }
+                }
+            }
+        }
+    },
+    "projects": {
+        "title": "Proyectos Destacados",
+        "portfolio": {
+            "title": "Proyecto Portfolio Fullstack",
+            "description": "Aplicación web modular construida con Vue 3, Vite, Tailwind CSS v4, PrimeVue y soporte multiidioma."
+        },
+        "godot": {
+            "title": "Motor de Estado 2D Godot",
+            "description": "Sistema de físicas personalizado en GDScript con máquinas de estados modulares para desarrollo de videojuegos indie."
+        }
+    },
+    "experience": {
+        "title": "Trayectoria Profesional",
+        "roles": {
+            "softwareEngineer": {
+                "period": "Oct 2026 - Actualidad",
+                "title": "Software Engineer",
+                "company": "NTT DATA · Barcelona, España",
+                "desc1": "Ingeniero de Software en NTT DATA, participando en la evolución, mantenimiento y mejora continua de la plataforma de gestión de residuos de Ecoembes, una solución clave para la digitalización de procesos en plantas de tratamiento y recicladores.",
+                "desc2": "Mis responsabilidades abarcan el desarrollo de nuevas características y mantenimiento de sistemas existentes. La plataforma está construida con .NET, bases de datos Oracle y frontend en Vue 3, incorporando soluciones de Inteligencia Artificial y Agentic AI para optimizar los procesos.",
+                "techs": [
+                    "Microsoft Azure",
+                    "Oracle Database",
+                    ".NET Framework",
+                    "Vue.js"
+                ]
+            },
+            "juniorEngineer": {
+                "period": "Sept 2023 - Oct 2026",
+                "title": "Junior Software Engineer",
+                "company": "NTT DATA · Barcelona, España",
+                "desc1": "Consolidación técnica en el desarrollo full-stack, participando en arquitecturas empresariales, resolución de incidencias complejas y soporte en el ecosistema .NET y bases de datos relacionales.",
+                "techs": [
+                    ".NET",
+                    "Angular",
+                    "PostgreSQL"
+                ]
+            },
+            "intern": {
+                "period": "Oct 2022 - Jul 2023",
+                "title": "Becario / Intern",
+                "company": "NTT DATA · Barcelona, España",
+                "desc1": "Encargado de desarrollar herramientas internas para la plataforma Salesforce, enfocándome en el backend y la integración de soluciones en la nube.",
+                "techs": [
+                    "Salesforce.com",
+                    "JavaScript",
+                    "C#",
+                    "Programación Apex"
+                ]
+            }
+        }
+    },
+    "footer": {
+        "contact": "Contacto"
+    }
+}
