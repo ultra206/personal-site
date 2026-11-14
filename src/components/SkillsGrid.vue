@@ -6,7 +6,6 @@ import { Technology } from '../constants/technologies'
 
 const { t } = useI18n()
 
-// Definimos los eventos que emitirá este componente
 const emit = defineEmits<{
     (e: 'select-category', category: string): void
 }>()
@@ -73,61 +72,61 @@ const handleCategoryClick = (category: string) => {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <!-- Inteligencia Artificial -->
-            <div @click="emit('select-category', 'ai')"
+            <div @click="handleCategoryClick('ai')"
                 class="bg-surface p-6 rounded-xl border border-white/10 flex flex-col gap-4 cursor-pointer hover:border-accent/50 transition-all select-none">
-                <GradientText :text="t('skills.categories.ai')" tag="h4"
-                    sizeClass="text-lg font-bold pointer-events-none" icon="pi pi-sparkles" />
-                <div class="flex flex-wrap gap-2 pointer-events-none">
+                <GradientText :text="t('skills.categories.ai')" tag="h4" sizeClass="text-lg font-bold"
+                    icon="pi pi-sparkles" />
+                <div class="flex flex-wrap gap-2">
                     <TechPill v-for="tech in aiTechs" :key="tech" :tech="tech" />
                 </div>
             </div>
 
             <!-- Backend -->
-            <div @click="emit('select-category', 'backend')"
+            <div @click="handleCategoryClick('backend')"
                 class="bg-surface p-6 rounded-xl border border-white/10 flex flex-col gap-4 cursor-pointer hover:border-accent/50 transition-all select-none">
-                <GradientText :text="t('skills.categories.backend')" tag="h4"
-                    sizeClass="text-lg font-bold pointer-events-none" icon="pi pi-server" />
-                <div class="flex flex-wrap gap-2 pointer-events-none">
+                <GradientText :text="t('skills.categories.backend')" tag="h4" sizeClass="text-lg font-bold"
+                    icon="pi pi-server" />
+                <div class="flex flex-wrap gap-2">
                     <TechPill v-for="tech in backendTechs" :key="tech" :tech="tech" />
                 </div>
             </div>
 
             <!-- Frontend -->
-            <div @click="emit('select-category', 'frontend')"
+            <div @click="handleCategoryClick('frontend')"
                 class="bg-surface p-6 rounded-xl border border-white/10 flex flex-col gap-4 cursor-pointer hover:border-accent/50 transition-all select-none">
-                <GradientText :text="t('skills.categories.frontend')" tag="h4"
-                    sizeClass="text-lg font-bold pointer-events-none" icon="pi pi-desktop" />
-                <div class="flex flex-wrap gap-2 pointer-events-none">
+                <GradientText :text="t('skills.categories.frontend')" tag="h4" sizeClass="text-lg font-bold"
+                    icon="pi pi-desktop" />
+                <div class="flex flex-wrap gap-2">
                     <TechPill v-for="tech in frontendTechs" :key="tech" :tech="tech" />
                 </div>
             </div>
 
             <!-- Bases de Datos -->
-            <div @click="emit('select-category', 'databases')"
+            <div @click="handleCategoryClick('databases')"
                 class="bg-surface p-6 rounded-xl border border-white/10 flex flex-col gap-4 cursor-pointer hover:border-accent/50 transition-all select-none">
-                <GradientText :text="t('skills.categories.databases')" tag="h4"
-                    sizeClass="text-lg font-bold pointer-events-none" icon="pi pi-database" />
-                <div class="flex flex-wrap gap-2 pointer-events-none">
+                <GradientText :text="t('skills.categories.databases')" tag="h4" sizeClass="text-lg font-bold"
+                    icon="pi pi-database" />
+                <div class="flex flex-wrap gap-2">
                     <TechPill v-for="tech in databaseTechs" :key="tech" :tech="tech" />
                 </div>
             </div>
 
             <!-- Cloud & DevOps -->
-            <div @click="emit('select-category', 'devops')"
+            <div @click="handleCategoryClick('devops')"
                 class="bg-surface p-6 rounded-xl border border-white/10 flex flex-col gap-4 cursor-pointer hover:border-accent/50 transition-all select-none">
-                <GradientText :text="t('skills.categories.devops')" tag="h4"
-                    sizeClass="text-lg font-bold pointer-events-none" icon="pi pi-cloud" />
-                <div class="flex flex-wrap gap-2 pointer-events-none">
+                <GradientText :text="t('skills.categories.devops')" tag="h4" sizeClass="text-lg font-bold"
+                    icon="pi pi-cloud" />
+                <div class="flex flex-wrap gap-2">
                     <TechPill v-for="tech in devopsTechs" :key="tech" :tech="tech" />
                 </div>
             </div>
 
             <!-- Idiomas -->
-            <div @click="emit('select-category', 'languages')"
+            <div @click="handleCategoryClick('languages')"
                 class="bg-surface p-6 rounded-xl border border-white/10 flex flex-col gap-4 cursor-pointer hover:border-accent/50 transition-all select-none">
-                <GradientText :text="t('skills.categories.languages')" tag="h4"
-                    sizeClass="text-lg font-bold pointer-events-none" icon="pi pi-globe" />
-                <div class="flex flex-wrap gap-2 pointer-events-none">
+                <GradientText :text="t('skills.categories.languages')" tag="h4" sizeClass="text-lg font-bold"
+                    icon="pi pi-globe" />
+                <div class="flex flex-wrap gap-2">
                     <TechPill v-for="tech in languageTechs" :key="tech" :tech="tech" />
                 </div>
             </div>

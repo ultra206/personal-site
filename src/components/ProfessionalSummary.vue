@@ -9,10 +9,10 @@ const { t } = useI18n()
         <div class="flex flex-col gap-6">
             <GradientText :text="t('profile.aboutMe')" tag="h3" sizeClass="text-2xl font-bold tracking-tight" />
 
-            <p class="text-sm sm:text-base text-txt-muted leading-relaxed">
+            <p class="text-sm sm:text-base text-txt-muted leading-relaxed text-justify">
                 {{ t('profile.summary1') }}
             </p>
-            <p class="text-sm sm:text-base text-txt-muted leading-relaxed">
+            <p class="text-sm sm:text-base text-txt-muted leading-relaxed text-justify">
                 {{ t('profile.summary2') }}
             </p>
         </div>
