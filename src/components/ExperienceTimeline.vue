@@ -6,6 +6,9 @@ import { EXPERIENCE_MAP } from '../constants/experienceData'
 
 const { t } = useI18n()
 
+// Controla si la timeline completa está colapsada o expandida en móvil
+const isTimelineOpen = ref(false)
+
 // Estado de expansión basado en el ID único de cada rol
 const expandedRoles = ref<Record<string, boolean>>({})
 
@@ -16,10 +19,25 @@ const toggleRole = (id: string) => {
 
 <template>
     <div class="bg-surface p-6 sm:p-8 rounded-xl border border-white/10 flex flex-col h-full gap-6">
-        <GradientText :text="t('experience.title')" tag="h3" sizeClass="text-2xl font-bold tracking-tight" />
 
-        <div class="relative border-l border-white/10 ml-3 flex flex-col gap-8 flex-grow">
+        <!-- Cabecera: clicable solo en móvil (< lg) para contraer/expandir toda la timeline -->
+        <div @click="isTimelineOpen = !isTimelineOpen"
+            class="flex items-center justify-between cursor-pointer lg:cursor-default select-none">
+            <GradientText :text="t('experience.title')" tag="h3" sizeClass="text-2xl font-bold tracking-tight" />
 
+            <!-- Indicador visual solo visible en móvil/tablet -->
+            <button type="button" class="lg:hidden text-accent p-1.5 rounded-lg hover:bg-white/5 transition-colors"
+                :aria-expanded="isTimelineOpen">
+                <i
+                    :class="['pi transition-transform duration-200', isTimelineOpen ? 'pi-chevron-up' : 'pi-chevron-down']"></i>
+            </button>
+        </div>
+
+        <!-- Contenedor de la timeline: oculto en móvil si está cerrado, siempre visible en escritorio (lg:flex) -->
+        <div :class="[
+            'relative border-l border-white/10 ml-3 flex-col gap-8 flex-grow',
+            isTimelineOpen ? 'flex' : 'hidden lg:flex'
+        ]">
             <!-- Bucle dinámico sobre el mapeo importado -->
             <div v-for="role in EXPERIENCE_MAP" :key="role.id" class="relative pl-6 group">
                 <!-- Indicador circular -->
@@ -42,7 +60,7 @@ const toggleRole = (id: string) => {
                             :class="['pi text-accent transition-transform duration-200', expandedRoles[role.id] ? 'pi-chevron-up' : 'pi-chevron-down']"></i>
                     </div>
 
-                    <!-- Contenido desplegable -->
+                    <!-- Contenido desplegable de cada rol -->
                     <div v-if="expandedRoles[role.id]"
                         class="flex flex-col gap-4 pt-3 border-t border-white/5 animate-fadeIn text-xs sm:text-sm text-txt-muted leading-relaxed">
                         <p v-for="(desc, idx) in role.descriptions" :key="idx">
