@@ -2,16 +2,12 @@ version: '3.8'
 
 services:
   portfolio:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: portfolio-vue-app:latest
     container_name: portfolio-vue-app
     restart: unless-stopped
-    ports:
-      - "5173:80"
     networks:
-      - web-network
+      - proxy-network
 
 networks:
-  web-network:
-    driver: bridge
+  proxy-network:
+    external: true
